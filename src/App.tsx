@@ -1,22 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { ReactComponent as TestingSVG } from './logo_2.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/* <img src={testing} className="App-logo" alt="logo" /> */}
+        <TestingSVG />
+        <h1 data-testid="testing-app-title">Cypress Testing</h1>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.cypress.io/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          More about Cypress Testing
         </a>
       </header>
     </div>
